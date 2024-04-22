@@ -1,0 +1,816 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.fondo--rojo {
+  background-color: #d80f1b;
+}
+
+.fondo--blanco {
+  background-color: #ffffff;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 62.5%; /* 1 REM = 10PX */
+  box-sizing: border-box; /* paul irish borderbox */
+}
+
+*, *:before, *:after { /* paul irish borderbox */
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px; /* 1 REM = 10PX */
+}
+
+.contenedor {
+  padding: 1.5rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .contenedor {
+    padding: 1.5rem 3rem;
+  }
+}
+@media (min-width: 900px) {
+  .contenedor {
+    padding: 1.5rem 6rem;
+  }
+}
+
+a { /* Para sacar el subrayado de los enlaces*/
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.fondo--rojo {
+  background-color: #d80f1b;
+}
+
+.fondo--blanco {
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #d80f1b;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .logo-header {
+  display: flex;
+  align-items: center;
+}
+header .logo-header .logo-header__escudo {
+  background-image: url(../img/independiente-logo-escudo.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 5.5rem;
+  height: 5.5rem;
+}
+header .logo-header .logo-header__nombre {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  color: #ffffff;
+}
+header .navbar-header {
+  display: flex;
+}
+header .navbar-header .navbar-header__lista {
+  display: flex;
+  flex-direction: column;
+}
+header .navbar-header .navbar-header__lista .navbar-header__enlace {
+  margin-top: 1.5rem;
+  color: #ffffff;
+  font-family: "Open sans";
+  font-size: 1.8rem;
+}
+header .navbar-header .navbar-header__lista .navbar-header__enlace:hover {
+  color: lightgray;
+}
+
+@media (min-width: 320px) {
+  header .logo-header .logo-header__nombre {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 400px) {
+  header {
+    height: 15rem;
+  }
+  header .logo-header .logo-header__nombre {
+    font-size: 4rem;
+  }
+  header .navbar-header .navbar-header__lista {
+    flex-direction: row;
+  }
+  header .navbar-header .navbar-header__lista .navbar-header__enlace {
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    height: 10rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-header {
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.fondo--rojo {
+  background-color: #d80f1b;
+}
+
+.fondo--blanco {
+  background-color: #ffffff;
+}
+
+footer {
+  font-family: "PT sans";
+  color: rgba(43, 43, 43, 0.7);
+  padding: 1rem 0;
+  font-size: 80%;
+}
+footer .sedes {
+  padding: 0 1rem;
+}
+footer .sedes .sedes-titulo {
+  font-family: "Roboto";
+  color: #d80f1b;
+}
+footer .desarrollador {
+  padding: 0 1rem;
+}
+
+@media (min-width: 600px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .linea-separadora {
+    display: none;
+  }
+  footer .sedes {
+    display: flex;
+    padding-left: 2rem;
+  }
+  footer .sedes__avellaneda {
+    line-height: 2;
+  }
+  footer .sedes__capital {
+    line-height: 2;
+    padding-left: 5rem;
+  }
+  footer .desarrollador {
+    padding-right: 2rem;
+  }
+}
+.linea-separadora {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-redes {
+  max-width: 1140px;
+  margin: 2rem auto 1.5rem;
+}
+
+.iconos-redes {
+  text-align: center;
+}
+.iconos-redes a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 24px;
+  margin: 0 10px;
+}
+.iconos-redes a:hover {
+  color: #000000;
+}
+
+.seccion1 .imagen1, .seccion1 .imagen2, .seccion1 .imagen3 {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.seccion1 .imagen1 a, .seccion1 .imagen2 a, .seccion1 .imagen3 a {
+  display: block;
+}
+.seccion1 .imagen1 .texto-imagen, .seccion1 .imagen2 .texto-imagen, .seccion1 .imagen3 .texto-imagen {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: white;
+  background-color: #d80f1b;
+  padding: 10px;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+.seccion1 .imagen1 .texto-imagen:hover, .seccion1 .imagen2 .texto-imagen:hover, .seccion1 .imagen3 .texto-imagen:hover {
+  transform: scale(1.05);
+}
+
+.plantel-index h2 {
+  color: #ffffff;
+  font-family: "PT sans";
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+#background-carousel {
+  background-image: url("../img/Independiente_saludo_libertadores_1965.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+  margin-bottom: 2rem; /* Agregamos margen inferior para dejar espacio para el "Ver más" */
+}
+
+.carousel-item .row {
+  margin-top: 2rem; /* Ajustamos la posición vertical de las imágenes */
+}
+
+.container.text-center {
+  margin-top: 2rem; /* Agregamos margen superior para separar el "Ver más" del carrusel */
+}
+
+#ver-mas-carousel {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+/* PAGINA ASOCIATE ------------------------------------------------------ */
+/* ENTRADA */
+.ingresar {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  font-family: "Roboto";
+  margin-top: 1.5rem;
+}
+.ingresar h1 {
+  font-size: 3rem;
+}
+.ingresar a {
+  text-decoration: underline;
+}
+
+/* FORMULARIO */
+.formulario-login { /* formulario*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+}
+.formulario-login .grupo-formulario { /* Usuario y Contraseña*/
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.formulario-login .grupo-formulario input { /*input*/
+  padding: 5px 5rem;
+  border-radius: 1rem;
+}
+.formulario-login label { /* Label */
+  padding: 1rem;
+}
+.formulario-login .boton-ingresar { /* Boton */
+  margin-bottom: 2rem;
+  padding: 5px 10rem;
+  border-radius: 1rem;
+  background-color: #d80f1b;
+  color: #ffffff;
+}
+
+.links-asociate { /* Links */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+  text-align: center;
+}
+
+.formulario-login a {
+  margin-bottom: 2rem;
+}
+
+.entrada-penas {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: "Roboto";
+  padding: 3rem 0;
+  border-bottom: 1px solid rgba(27, 27, 27, 0.096);
+}
+.entrada-penas h1 {
+  font-size: 3rem;
+}
+.entrada-penas a {
+  text-decoration: underline;
+}
+
+.mapa-penas iframe {
+  width: 100%;
+  height: 50rem;
+  margin: 5rem 0;
+}
+
+.entrada-plantel {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: "Roboto";
+  padding-top: 3rem;
+  border-bottom: 1px solid rgba(27, 27, 27, 0.096);
+}
+
+.titulo-plantel {
+  border-bottom: 1.5px solid rgba(27, 27, 27, 0.096);
+  margin-top: 3rem;
+}
+
+.plantel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.imagen-estadio {
+  height: 100%;
+  width: 100%;
+}
+
+.seccion-lda {
+  padding-bottom: 5rem;
+  font-family: var("Roboto");
+}
+
+.entrada-estadio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.entrada-estadio h2 {
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .entrada-estadio {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .entrada-estadio h2 {
+    text-align: left;
+  }
+}
+.entrada-estadio a {
+  text-decoration: underline;
+}
+
+.entrada-info-estadio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .entrada-info-estadio {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.info-estadio img {
+  width: 4rem;
+  height: auto;
+}
+
+@media (min-width: 480px) {
+  .info-estadio img {
+    width: 5rem;
+    height: auto;
+  }
+  .info-estadio p {
+    font-size: 18px;
+  }
+}
+.info-estadio {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* MAPA ESTADIO */
+.capacidades {
+  padding-top: 5rem;
+  background-color: var(--rojo2);
+}
+
+#imagen-capacidades {
+  width: 100%;
+}
+
+@media (min-width: 400px) {
+  .plantel-index h2 {
+    font-size: 4rem;
+  }
+  .plantel {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 480px) {
+  .formulario-login .grupo-formulario input {
+    padding: 5px 8rem;
+  }
+  .formulario-login .boton-ingresar {
+    padding: 5px 14rem;
+  }
+}
+@media (min-width: 600px) {
+  .ingresar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 3rem;
+  }
+  .ingresar .formulario-login {
+    margin: 5rem 0;
+  }
+  .ingresar .formulario-login input {
+    padding: 5px 12rem;
+  }
+  .ingresar .boton-ingresar {
+    padding: 5px 18rem;
+  }
+}
+@media (min-width: 768px) {
+  .seccion1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+  .seccion1 .imagen1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .seccion1 .imagen1 .texto-imagen {
+    bottom: 2rem;
+  }
+  .seccion1 .imagen3 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .seccion1 .imagen3 .texto-imagen {
+    bottom: 3rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

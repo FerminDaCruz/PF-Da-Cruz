@@ -1,0 +1,389 @@
+// Variables y utilidades
+@import "utilities/variables";
+@import "utilities/utilities";
+
+// Bases generales 
+@import "base/normalize";
+@import "base/typography";
+@import "base/base";
+
+// Layouts 
+@import "layout/header";
+@import "layout/footer";
+
+
+
+.linea-separadora {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+// Inicio Redes
+.contenedor-redes {
+    max-width: 1140px;
+    margin: 2rem auto 1.5rem;
+}
+
+.iconos-redes {
+    text-align: center;
+
+    a {
+        color: rgba(255, 255, 255, 0.7); 
+        font-size: 24px; 
+        margin: 0 10px; 
+
+        &:hover {
+            color: #000000; 
+        }
+    }
+}
+// Fin Redes
+
+// Inicio Main / Seccion 1
+
+
+.seccion1 {
+    .imagen1, .imagen2, .imagen3 {
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        a {
+            display: block;
+        }
+        .texto-imagen {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            color: white;
+            background-color: #d80f1b;
+            padding: 10px;
+            opacity: 0.9;
+            transition: transform 0.3s ease;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+    }
+}
+
+// Fin Main 
+
+// Inicio Carrusel
+
+.plantel-index {
+    h2 {
+        color: $blanco;
+        font-family: "PT sans";
+        font-weight: bold;
+        font-size: 3rem;
+    }
+}
+
+#background-carousel {
+    background-image: url("../img/Independiente_saludo_libertadores_1965.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40rem;
+    margin-bottom: 2rem; /* Agregamos margen inferior para dejar espacio para el "Ver más" */
+}
+
+.carousel-item .row {
+    margin-top: 2rem; /* Ajustamos la posición vertical de las imágenes */
+}
+
+.container.text-center {
+    margin-top: 2rem; /* Agregamos margen superior para separar el "Ver más" del carrusel */
+}
+
+#ver-mas-carousel{
+    color: white;
+    margin-bottom: 2rem;
+}
+//Fin Seccion 2
+
+
+
+/* PAGINA ASOCIATE ------------------------------------------------------ */
+
+/* ENTRADA */
+
+.ingresar {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-family: "Roboto";
+    margin-top: 1.5rem;
+    h1 {
+        font-size: 3rem;
+    }
+    a {
+        text-decoration: underline;
+    }
+}
+
+
+/* FORMULARIO */
+
+.formulario-login { /* formulario*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    .grupo-formulario { /* Usuario y Contraseña*/
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        align-items: center;
+        input { /*input*/
+            padding: 5px 5rem;
+            border-radius: 1rem;
+        }
+    }
+    label { /* Label */
+        padding: 1rem;
+    }
+    .boton-ingresar { /* Boton */
+        margin-bottom: 2rem;
+        padding: 5px 10rem;
+        border-radius: 1rem;
+        background-color: $color-primario;
+        color: $blanco;
+    }
+}
+
+.links-asociate { /* Links */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+    text-align: center;
+} 
+
+.formulario-login a {
+    margin-bottom: 2rem;
+}
+
+// Fin Asociate
+
+
+// Inicio Peñas 
+
+.entrada-penas {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: "Roboto";
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(27, 27, 27, 0.096);
+    h1 {
+        font-size: 3rem;
+    }
+    a {
+        text-decoration: underline;
+    }
+    
+}
+
+.mapa-penas iframe {
+    width: 100%;
+    height: 50rem;
+    margin: 5rem 0;
+}
+
+// Inicio Plantel
+.entrada-plantel {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: "Roboto";
+    padding-top: 3rem;
+    border-bottom: 1px solid rgba(27, 27, 27, 0.096);
+}
+
+.titulo-plantel {
+    border-bottom: 1.5px solid rgba(27, 27, 27, 0.096);
+    margin-top: 3rem;
+}
+
+.plantel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+// Fin Plantel
+
+
+// Inicio Estadio 
+// IMAGEN ESTADIO  
+.imagen-estadio {
+    height: 100%; 
+    width: 100%;
+}
+
+// SECCION LDA 
+.seccion-lda {
+    padding-bottom: 5rem;
+    font-family: var("Roboto");
+}
+
+.entrada-estadio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.entrada-estadio h2 {
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .entrada-estadio {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .entrada-estadio h2 {
+        text-align: left;
+    }
+}
+
+.entrada-estadio a {
+    text-decoration: underline;
+}
+
+.entrada-info-estadio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .entrada-info-estadio {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }   
+}
+
+.info-estadio img{
+    width: 4rem;
+    height: auto;
+}
+
+@media (min-width: 480px) {
+    .info-estadio img{
+        width: 5rem;
+        height: auto;
+    }
+    .info-estadio p {
+        font-size: 18px;
+    }
+}
+
+.info-estadio {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* MAPA ESTADIO */
+
+.capacidades {
+    padding-top: 5rem ;
+    background-color: var(--rojo2);
+}
+
+#imagen-capacidades {
+    width: 100%;
+}
+//Fin Estadio
+
+
+// MEDIA QUERYS
+@media (min-width:400px) {
+    //Seccion 2
+    .plantel-index {
+        h2 {
+            font-size: 4rem;
+        }
+    }
+
+    //Plantel
+    .plantel {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 480px) {
+    // Inicio Asociate
+    .formulario-login {
+        .grupo-formulario {
+            input {
+                padding: 5px 8rem;
+            }
+        }
+        .boton-ingresar {
+            padding: 5px 14rem;
+        }
+    }
+    // Fin Asociate
+}
+
+
+
+@media (min-width:600px) {
+    //Inicio Asociate
+    .ingresar{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 3rem;
+
+        .formulario-login {
+            margin: 5rem 0;
+            input {
+                padding: 5px 12rem;
+            }
+        }
+        .boton-ingresar {
+            padding: 5px 18rem;
+        }
+    }
+    // Fin Asociate
+}
+
+
+@media (min-width:768px) {
+    // Inicio Main / Seccion 1       
+    .seccion1 {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        .imagen1 {
+            grid-column: span 2; 
+            grid-row: span 2; 
+            .texto-imagen {
+                bottom: 2rem;
+            }
+        }
+        
+        .imagen3 {
+            grid-column: span 1; 
+            grid-row: span 1; 
+            .texto-imagen {
+                bottom: 3rem;
+            }
+        }
+    }
+    //Fin Main / Seccion 1
+
+}

@@ -1,0 +1,97 @@
+@import "../base/typography";
+@import "../utilities/variables";
+@import "../utilities/utilities";
+
+
+header {
+    background-color:$color-primario;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo-header {
+        display: flex;
+        align-items: center;
+    
+        .logo-header__escudo { 
+            background-image: url(../img/independiente-logo-escudo.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 5.5rem;
+            height: 5.5rem;
+        }
+        .logo-header__nombre{
+            font-family: $fuente-logo;
+            font-size: 2.5rem;
+            margin-left: 1rem;
+            color: $blanco;
+        }
+    }
+
+    .navbar-header {
+        display: flex;
+        .navbar-header__lista {
+            display: flex; 
+            flex-direction: column;
+    
+            .navbar-header__enlace {
+                margin-top: 1.5rem;
+                    color: $blanco;
+                    font-family: "Open sans";
+                    font-size: 1.8rem; 
+                }
+            .navbar-header__enlace:hover {
+                color: lightgray;
+            }
+        }
+    }
+}
+
+
+@media (min-width:320px) {
+    header {
+        .logo-header {
+            .logo-header__nombre {
+                font-size: 3.5rem;
+
+            }
+        }
+    }
+}
+
+@media (min-width:400px) {
+    header {
+        height: 15rem;
+
+
+        .logo-header {
+            .logo-header__nombre {
+                font-size: 4rem;
+            }
+        }
+
+        .navbar-header {
+            .navbar-header__lista {
+                flex-direction: row;
+                .navbar-header__enlace {
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    header {
+        height: 10rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-header {
+        padding: 15px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

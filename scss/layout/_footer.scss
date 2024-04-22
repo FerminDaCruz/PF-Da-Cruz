@@ -1,0 +1,49 @@
+@import "../base/typography";
+@import "../utilities/variables";
+@import "../utilities/utilities";
+
+footer {
+    font-family: "PT sans";
+    color: rgba(43, 43, 43, 0.7);
+    padding: 1rem 0;
+    font-size: 80%;
+
+
+    .sedes{
+        padding: 0 1rem;
+        .sedes-titulo {
+            font-family: "Roboto";
+            color: $color-primario;
+        }
+    }
+    .desarrollador {
+        padding: 0 1rem;
+
+    }
+}
+
+@media (min-width:600px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        .linea-separadora {
+            display: none;
+        }
+        .sedes {
+            display: flex;
+            padding-left: 2rem;
+        }
+        .sedes__avellaneda {
+            line-height: 2;
+
+        }
+
+        .sedes__capital {
+            line-height: 2;
+            padding-left: 5rem;
+        }
+        .desarrollador {
+            padding-right:2rem;
+        }
+    }
+}
